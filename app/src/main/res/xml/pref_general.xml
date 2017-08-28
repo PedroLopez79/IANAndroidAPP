@@ -1,0 +1,64 @@
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_default_display_name"
+        android:inputType="textCapWords"
+        android:key="ipservidor"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="IP Servidor" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="1"
+        android:inputType="textCapWords"
+        android:key="numeroestacion"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Numero de Estacion"
+        android:password="false" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="NO"
+        android:inputType="textCapWords"
+        android:key="camarafrontal"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Usuar camara frontal"
+        android:password="false" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="0"
+        android:inputType="textCapWords"
+        android:key="rotarimagen"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Rotar Camara"
+        android:password="false" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="NO"
+        android:inputType="textCapWords"
+        android:key="rotarpantalla"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Rotar Pantalla completa"
+        android:password="false" />
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+
+</PreferenceScreen>

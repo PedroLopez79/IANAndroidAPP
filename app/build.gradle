@@ -1,0 +1,34 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.0"
+
+
+    defaultConfig {
+        applicationId "com.example.kamran.login"
+        minSdkVersion 21
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies
+        {
+            compile fileTree(dir: 'libs', include: ['*.jar'])
+            compile project(':jtds-1.2.7')
+            compile project(':ksoap2-android-2.5.2')
+            compile 'com.android.support:appcompat-v7:24.2.1'
+            compile 'com.android.support:design:25.1.0'
+            compile 'com.android.support:support-v4:24.2.1'
+            compile 'com.android.support:support-vector-drawable:24.2.1'
+            compile 'com.android.support.constraint:constraint-layout:1.0.2'
+        }

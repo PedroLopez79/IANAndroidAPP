@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_compras"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:windowSoftInputMode="adjustNothing"
+    tools:context="com.example.kamran.login.compras"
+    android:background="@drawable/background2">
+
+    <TextView
+        android:text="."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/textView1"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentLeft="true"
+        android:textStyle="normal|bold" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/date"
+            android:id="@+id/btnFecha"
+            android:layout_height="40dp"
+            android:layout_width="35dp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtfecha"
+            app:layout_constraintTop_toTopOf="@+id/txtfecha"
+            app:layout_constraintLeft_toRightOf="@+id/txtfecha" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtfecha"
+            android:layout_marginStart="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="112dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="12sp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:text="folio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:layout_marginTop="104dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="128dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textStyle="normal|bold|italic"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtFolio"
+            app:layout_constraintLeft_toLeftOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            android:textSize="12sp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:text="Tipo Movimiento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:textStyle="normal|bold|italic"
+            android:textAllCaps="true"
+            android:layout_marginTop="104dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="192dp"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <Spinner
+            android:layout_width="155dp"
+            android:id="@+id/sptipomovimiento"
+            app:layout_constraintLeft_toLeftOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            android:layout_height="31dp" />
+
+        <TextView
+            android:text="Almacen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView7"
+            android:textStyle="normal|bold|italic"
+            android:textAllCaps="true"
+            android:layout_marginTop="152dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="16dp"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <Spinner
+            android:layout_width="170dp"
+            android:id="@+id/spalmacen"
+            app:layout_constraintTop_toBottomOf="@+id/textView7"
+            android:layout_height="31dp"
+            app:layout_constraintLeft_toLeftOf="@+id/textView7" />
+
+        <TextView
+            android:text="Proveedor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:textStyle="normal|bold|italic"
+            android:textAllCaps="true"
+            android:layout_marginTop="152dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="192dp"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <Spinner
+            android:layout_width="155dp"
+            android:id="@+id/spproveedor"
+            app:layout_constraintLeft_toLeftOf="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/textView8"
+            android:layout_height="31dp" />
+
+        <TextView
+            android:text="Referencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView9"
+            android:textStyle="normal|bold|italic"
+            android:textAllCaps="true"
+            android:layout_marginTop="200dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="16dp"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <EditText
+            android:layout_width="245dp"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/edtReferencia"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            app:layout_constraintTop_toTopOf="@+id/textView9"
+            app:layout_constraintBottom_toBottomOf="@+id/textView9"
+            android:layout_marginStart="8dp"
+            app:layout_constraintLeft_toRightOf="@+id/textView9" />
+
+        <TextView
+            android:text="Estacion Destino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textStyle="normal|bold|italic"
+            android:textAllCaps="true"
+            android:layout_marginTop="224dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="16dp"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:text="Almacen Destino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView10"
+            android:textStyle="normal|bold|italic"
+            android:textAllCaps="true"
+            android:layout_marginStart="192dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="224dp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:text="Producto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView15"
+            android:textStyle="normal|bold|italic"
+            android:textAllCaps="true"
+            android:layout_marginTop="280dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="72dp"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:text="Cantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView16"
+            android:textStyle="normal|bold|italic"
+            android:textAllCaps="true"
+            android:layout_marginTop="280dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="192dp"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <Spinner
+            android:layout_width="170dp"
+            android:id="@+id/spestaciond"
+            android:layout_height="31dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintLeft_toLeftOf="@+id/textView" />
+
+        <Spinner
+            android:layout_width="156dp"
+            android:layout_height="31dp"
+            android:id="@+id/spalmacend"
+            app:layout_constraintLeft_toLeftOf="@+id/textView10"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtidproducto"
+            android:layout_marginStart="72dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="304dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtdescproducto"
+            app:layout_constraintTop_toBottomOf="@+id/txtidproducto"
+            app:layout_constraintLeft_toLeftOf="@+id/txtidproducto"
+            android:textSize="12sp"
+            android:textStyle="normal|bold" />
+
+        <ImageButton
+            android:layout_width="44dp"
+            android:layout_height="60dp"
+            app:srcCompat="@android:drawable/ic_input_add"
+            android:id="@+id/btnagregarproducto"
+            android:layout_marginTop="280dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="320dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.95" />
+
+        <ImageButton
+            android:layout_width="54dp"
+            android:layout_height="58dp"
+            app:srcCompat="@android:drawable/ic_search_category_default"
+            android:id="@+id/btnbuscarproducto"
+            android:layout_marginStart="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="280dp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:layout_width="77dp"
+            android:layout_height="32dp"
+            android:id="@+id/spcantidad"
+            app:layout_constraintTop_toBottomOf="@+id/textView16"
+            app:layout_constraintLeft_toLeftOf="@+id/textView16" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="264dp"
+            android:text="-------------------------------------------------------------------------------------"
+            app:layout_constraintHorizontal_bias="0.42"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:layout_width="56dp"
+            android:layout_height="54dp"
+            app:srcCompat="@drawable/ic_menu_save_color2"
+            android:id="@+id/btnguardar"
+            android:layout_marginStart="296dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="448dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="42dp"
+            android:maxHeight="42dp"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            app:srcCompat="@drawable/stat_notify_more_color1"
+            android:id="@+id/btnnuevo"
+            app:layout_constraintRight_toLeftOf="@+id/btnguardar"
+            app:layout_constraintBottom_toBottomOf="@+id/btnguardar"
+            app:layout_constraintTop_toTopOf="@+id/btnguardar"
+            android:layout_width="54dp"
+            android:layout_height="45dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="42dp"
+            android:maxHeight="42dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintVertical_bias="0.55" />
+
+        <ListView
+            android:layout_width="328dp"
+            android:layout_height="104dp"
+            android:layout_marginTop="344dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/lvdetalleproductos" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>
