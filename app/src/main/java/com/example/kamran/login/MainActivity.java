@@ -29,7 +29,7 @@ import org.ksoap2.transport.HttpTransportSE;
 
 public class MainActivity extends ActionBarActivity
 {
-    // Declaring layout button, edit texts
+    // cambio para checar repositorio
     public static final int SIGNATURE_ACTIVITY = 1;
     String TAG = "Response";
     String resultString;
